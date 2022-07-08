@@ -1,0 +1,24 @@
+싱글페이지 어플리케이션이다.
+시작 전에 app이라는 id를 div에 주고 시작
+object형(제일 유연하기 때문에 사용)을 주로 사용함
+el: 어딜 보고 있을건지(#app(주로))
+이벤트 리스너 => 한 줄로 줄 수 있음.
+id는 유일해야할 때 준다.
+
+웹 팩 https://webpack.js.org/
+https://cdn.jsdelivr.net/npm/vue@2.6.0
+안에 들어가보면 나오는 형식처럼 만드는 것.
+압축하는 기술
+
+라이브러리
+할 게 많다
+
+프레임워크
+할 게 적다
+
+node만 다운 받으면 됨.
+npm install vue@next 최신버전
+npm init @vitejs/app test_vue
+화살표키로 내려서 vue엔터하면 뜨는 명령줄 3개 입력 하면 로컬호스트 생성
+
+vue의 npm run dev가 react의 npm start
