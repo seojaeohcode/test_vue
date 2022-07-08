@@ -22,3 +22,48 @@ npm init @vitejs/app test_vue
 화살표키로 내려서 vue엔터하면 뜨는 명령줄 3개 입력 하면 로컬호스트 생성
 
 vue의 npm run dev가 react의 npm start
+
+import { createApp } from 'vue'
+=> <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+vue에서 끌어오겠단 얘기
+
+createApp(App).mount('#app')
+mount => connect 연결하겠다.
+
+import { createApp } from 'vue'
+뷰에있는 모듈 중에서 createApp모듈을 사용하겠다.
+키만 넣어줄 수도 있다.{}는 오브젝트 
+vue의 수많은 기능 중에 createApp만 사용하겠다는 소리
+
+createApp == new Vue(vueObject);
+
+src 이외의 부분은 거의 건드리지 않는다.
+public 이미지나 그런 것들 그러나 public 보다도 assets에 주로 넣는다.
+
+App.vue 
+
+npm install -> package.json에 설치 / package-lock.json(상세)
+=> 뷰를 만들고 패키지를 실제로 받는 과정이 필요
+뷰를 만들고 npm install해야함 => node modules 라는 뷰를 실행하기 위한 모듈이 설치 됨.
+
+vite = 최신버전(파일은 그대론데 파일 위치만 바뀜/환경파일의 내용만 바뀐다.)
+vue vite 둘 다 쓸 줄 아는 것이 좋다.
+
+프론트엔드 => 기능을 마이크로로 쪼개는 게 좋다.
+
+npm run build > dist폴더 생성
+
+build 배포를 위한 것 => webpack 형식 => 속도 상승
+
+App.vue 스크립트 옆의 setup => vue3에서 쓰는 방식
+셋업 지우면 vue 2, 3 다 쓸 수 있다는 것이고
+안 지우면 3만 쓰겠다는 얘기
+
+scoped를 사용하면 자기(현재내용)에만 적용되는 스타일을 만들 수 있다.
+
+{{}}이것을 쓰면 html에서 자바스크립트 변수를 가져왔다는 것을 알리고 쓸 수 있다.
+
+v-text(태그 안에 쓰는 기능.) => innerText
+innerHtml은 돔구조로 바뀌지 않는다. 
+v-html => 돔구조로 변환 됨.
+웬만하면 두단어 이상으로 파일이름 유지 + 카멜법
