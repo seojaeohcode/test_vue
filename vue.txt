@@ -17,7 +17,7 @@ https://cdn.jsdelivr.net/npm/vue@2.6.0
 할 게 적다
 
 node만 다운 받으면 됨.
-npm install vue@next 최신버전
+npm install vue@next : 최신버전
 npm init @vitejs/app test_vue
 화살표키로 내려서 vue엔터하면 뜨는 명령줄 3개 입력 하면 로컬호스트 생성
 
@@ -69,3 +69,32 @@ v-html => 돔구조로 변환 됨.
 웬만하면 두단어 이상으로 파일이름 유지 + 카멜법
 
 뷰 바인드로 어트리뷰트에 뷰로 연결해서 사용한다는 의미를 줄 수 있음.
+
+
+vue3+vite와 vue3를 리액트처럼 만드는 실행하는 방법이 좀 다르다.
+
+-------------------------------------------------------------------
+실무실습 vue 정리
+
+따로 나눈 화면을 저장하는 곳이 App.vue
+
+vue도 JSX방식 처럼 그려줘야할 부분을 따로 저장
+> layout => Header(다시 그리지 않아도 될 부분)
+> views =>(다시 그려야할 부분)
+
+vue의 기본 형태
+<template>
+    <div>
+        
+    </div>
+</template>
+
+<script>
+export default {
+    
+};
+</script>
+
+js파일 기본 형태
+import Vue from "vue";
+import VueRouter from "vue-router";
